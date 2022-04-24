@@ -1,0 +1,393 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bg-left {
+  background: linear-gradient(
+    to bottom left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  position: fixed;
+  top: 0;
+  left: -10vw;
+  width: 40vw;
+  height: 90vh;
+  border-radius: 0 0 25rem 25rem;
+  z-index: -1000;
+}
+
+.bg-right {
+  background: hsl(270, 20%, 96%);
+  position: fixed;
+  bottom: 0;
+  right: -10vw;
+  width: 32vw;
+  height: 90vh;
+  border-radius: 20rem 20rem 0 0;
+  z-index: -1000;
+}
+
+.home {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+}
+
+.home__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.home__data h1 {
+  color: hsl(271, 36%, 24%);
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.home__data p {
+  color: hsl(270, 7%, 64%);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.home__mobile {
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 0.7rem;
+  overflow: hidden;
+
+  width: 330px;
+  justify-self: center;
+}
+
+.notch {
+  position: absolute;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 0 1rem 1rem;
+  width: 170px;
+  height: 35px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.iphone__header {
+  background: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  color: hsl(0, 0%, 100%);
+  padding: 2.5rem 1rem 0.8rem;
+  border-radius: 2rem 2rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__data {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.header__data i {
+  font-size: 1.5rem;
+}
+
+.header__data img {
+  width: 35px;
+  border-radius: 2rem;
+  border: solid 2px hsl(0, 0%, 100%);
+}
+
+.header__title h3 {
+  font-size: 0.9rem;
+  color: hsl(270, 20%, 96%);
+}
+
+.header__title span {
+  font-size: 0.7rem;
+  color: hsl(276, 100%, 81%);
+}
+
+.iphone__main {
+  background-color: hsl(270, 20%, 96%);
+  border-radius: 0 0 2rem 2rem;
+  padding: 0.7rem;
+
+  display: grid;
+  row-gap: 0.6rem;
+}
+
+.main__chat-left {
+  background-color: #ede5f4;
+  color: hsl(276, 55%, 52%);
+  padding: 0.4rem 0.8rem 0.4rem 0.5rem;
+  border-radius: 0.9rem 0.9rem 0.9rem 0.2rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  justify-self: start;
+  width: 60%;
+  max-width: fit-content;
+}
+
+.main__dogpic {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  column-gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.main__dogpic img {
+  width: 55px;
+  border-radius: 0.8rem;
+}
+
+.main__chat-right {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(271, 15%, 43%);
+  padding: 0.4rem 0.8rem 0.4rem 0.5rem;
+  border-radius: 0.9rem 0.9rem 0.2rem 0.9rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  justify-self: end;
+  width: 60%;
+  max-width: fit-content;
+}
+
+.main__work {
+  background: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  color: hsl(0, 0%, 100%);
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+  border-radius: 1rem 1rem 1rem 0.2rem;
+  width: 75%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__time {
+  display: flex;
+  align-items: center;
+  column-gap: 0.2rem;
+}
+.main__time i {
+  color: hsl(289, 100%, 72%);
+  font-size: 1.8rem;
+}
+.main__time span {
+  font-size: 0.7rem;
+  color: hsl(270, 20%, 96%);
+}
+
+.main__price {
+  font-weight: 700;
+}
+
+.main__input {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  padding: 0.4rem 0.4rem 0.4rem 2rem;
+  margin-top: 0.4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__input span {
+  font-size: 0.8rem;
+  color: hsl(206, 6%, 79%);
+}
+
+.main__input i {
+  background-color: hsl(271, 36%, 24%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.3rem;
+  border-radius: 2rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/* @@@@@@@@@@@@@ mobile @@@@@@@@@@@@ */
+@media (max-width: 768px) {
+  .bg-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45vw;
+    height: 55vh;
+    border-radius: 0 0 25rem 0;
+    z-index: -1000;
+  }
+
+  .bg-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 45vw;
+    height: 55vh;
+    border-radius: 25rem 0 0 0;
+    z-index: -1000;
+  }
+
+  .home__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2rem 0;
+  }
+
+  .home__data {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .home__data h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .home__data p {
+    font-size: 0.9rem;
+  }
+
+  .home__mobile {
+    border-radius: 2rem;
+    padding: 0.5rem;
+    width: 240px;
+    justify-self: center;
+  }
+
+  .notch {
+    width: 120px;
+    height: 27px;
+  }
+
+  .iphone__header {
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding: 2rem 0.5rem 0.5rem;
+  }
+
+  .header__data {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+
+  .header__data i {
+    font-size: 1rem;
+  }
+
+  .header__data img {
+    width: 30px;
+    border: solid 1px hsl(0, 0%, 100%);
+  }
+
+  .header__title h3 {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+
+  .header__title span {
+    font-size: 0.5rem;
+  }
+
+  .iphone__main {
+    border-radius: 0 0 1.5rem 1.5rem;
+    padding: 0.5rem;
+    row-gap: 0.5rem;
+  }
+
+  .main__chat-left {
+    padding: 0.3rem 0.8rem 0.3rem 0.5rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.2rem;
+    font-size: 0.5rem;
+  }
+
+  .main__dogpic {
+    margin-top: 0.3rem;
+  }
+  .main__dogpic img {
+    width: 40px;
+    border-radius: 0.5rem;
+  }
+
+  .main__chat-right {
+    padding: 0.3rem 0.8rem 0.3rem 0.5rem;
+    border-radius: 0.5rem 0.5rem 0.2rem 0.5rem;
+    font-size: 0.5rem;
+  }
+
+  .main__work {
+    padding: 0.3rem 0.8rem 0.3rem 0.3rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.2rem;
+    width: 70%;
+  }
+
+  .main__time {
+    column-gap: 0.1rem;
+  }
+  .main__time i {
+    font-size: 1.2rem;
+  }
+  .main__time span {
+    font-size: 0.5rem;
+  }
+
+  .main__price {
+    font-weight: 500;
+    font-size: 0.7rem;
+  }
+
+  .main__input {
+    border-radius: 2rem;
+    padding: 0.3rem 0.3rem 0.3rem 0.8rem;
+    margin-top: 0.2rem;
+  }
+
+  .main__input span {
+    font-size: 0.5rem;
+  }
+
+  .main__input i {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.2rem;
+  }
+}
